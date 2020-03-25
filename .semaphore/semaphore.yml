@@ -12,6 +12,9 @@ blocks:
           commands:
             - sem-service start postgres
             - sem-version go 1.14
+            - export APP_DB_NAME = postgres
+            - export APP_DB_USERNAME = postgres
+            - export APP_DB_PASSWORD =
             - export GOPATH=~/go
             - checkout
             - go get ./...
