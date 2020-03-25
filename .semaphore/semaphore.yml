@@ -10,11 +10,11 @@ blocks:
       jobs:
         - name: go test
           commands:
-            - sem-service start postgres
+            - sem-service start postgres 12
             - sem-version go 1.14
-            - export APP_DB_NAME = postgres
-            - export APP_DB_USERNAME = postgres
-            - export APP_DB_PASSWORD =
+            - export APP_DB_NAME=postgres
+            - export APP_DB_USERNAME=postgres
+            - export APP_DB_PASSWORD=
             - export GOPATH=~/go
             - checkout
             - go get ./...
